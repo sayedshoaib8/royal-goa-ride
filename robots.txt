@@ -1,0 +1,17 @@
+# Royal Goa Ride - Robots.txt
+# This file controls how search engines crawl the website
+
+# Allow all bots by default
+User-agent: *
+Allow: /
+
+# Disallow private paths (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Sitemap location
+Sitemap: https://royalgoaride.com/sitemap.xml
+
+# Crawl delay to be respectful
+Crawl-delay: 1

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Page Not Found | Royal Goa Ride - Car Rental in Goa</title>
+
+  <meta name="description" content="The page you're looking for doesn't exist. Browse our complete fleet of self-drive cars and bikes for rent in Goa from ₹1,200/day.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://royalgoaride.com/404.html">
+  
+  <meta property="og:title" content="Page Not Found | Royal Goa Ride">
+  <meta property="og:description" content="The page you're looking for doesn't exist. Browse our complete fleet.">
+  <meta property="og:image" content="https://royalgoaride.com/assets/og-imag.webp">
+  <meta property="og:type" content="website">
+
+  <meta name="theme-color" content="#0D9488">
+
+  <style>
+    :root {
+      --navy: #0B1829;
+      --teal: #0D9488;
+      --teal-light: #14B8AA;
+      --gold: #C9A84C;
+      --sand: #F5F0E8;
+      --text-dark: #0B1829;
+      --font-display: 'Playfair Display', Georgia, serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: #fff;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--teal);
+      color: #fff;
+      padding: .75rem 1.5rem;
+      border-radius: 0 0 .5rem .5rem;
+      font-weight: 600;
+      z-index: 9999;
+      transition: top .2s;
+    }
+
+    .skip-link:focus { top: 0; }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 24, 41, .96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(13, 148, 136, 0.2);
+    }
+
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: .625rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .nav-logo span { color: var(--teal-light); }
+
+    .nav-links { display: none; align-items: center; gap: .25rem; }
+
+    .nav-links a {
+      color: rgba(255, 255, 255, .75);
+      font-size: .875rem;
+      font-weight: 500;
+      padding: .5rem .875rem;
+      border-radius: .375rem;
+      transition: color .2s;
+    }
+
+    .nav-links a:hover { color: #fff; background: rgba(255, 255, 255, .08); }
+
+    @media (min-width: 769px) {
+      .nav-links { display: flex; }
+      .nav-burger { display: none !important; }
+    }
+
+    .nav-cta {
+      background: var(--teal);
+      color: #fff !important;
+      font-weight: 600;
+      padding: .625rem 1.25rem;
+      border-radius: 2rem;
+      transition: background .2s;
+    }
+
+    .nav-cta:hover { background: var(--teal-light); }
+
+    .nav-burger {
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      padding: .5rem;
+      font-size: 1.5rem;
+    }
+
+    /* 404 HERO */
+    .hero-404 {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--teal) 100%);
+      color: #fff;
+      padding: 5rem 1.5rem;
+      text-align: center;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-404-inner {
+      max-width: 600px;
+    }
+
+    .error-code {
+      font-family: var(--font-display);
+      font-size: clamp(3rem, 10vw, 8rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      opacity: .95;
+    }
+
+    .error-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .error-desc {
+      font-size: 1.0625rem;
+      margin-bottom: 2rem;
+      opacity: .9;
+      line-height: 1.6;
+    }
+
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 2.5rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: .9rem;
+      padding: .75rem 1.375rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+      min-height: 44px;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--navy);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+    }
+
+    .btn-secondary:hover { background: rgba(255, 255, 255, .1); }
+
+    /* SUGGESTIONS */
+    .suggestions {
+      padding: 4rem 1.5rem;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .suggestions-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: var(--text-dark);
+    }
+
+    .suggestions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .suggestion-card {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, .08);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .suggestion-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, .1);
+    }
+
+    .suggestion-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .suggestion-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: .5rem;
+      color: var(--text-dark);
+    }
+
+    .suggestion-desc {
+      font-size: .875rem;
+      color: #6B7280;
+      margin-bottom: 1rem;
+    }
+
+    .suggestion-card a {
+      color: var(--teal);
+      font-weight: 600;
+      transition: color .2s;
+    }
+
+    .suggestion-card a:hover { color: var(--teal-light); }
+
+    /* FOOTER */
+    .footer {
+      background: var(--navy);
+      color: rgba(255, 255, 255, .6);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .footer-text {
+      font-size: .875rem;
+      margin-bottom: .5rem;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      font-size: .8rem;
+    }
+
+    .footer-links a {
+      color: rgba(255, 255, 255, .5);
+      transition: color .2s;
+    }
+
+    .footer-links a:hover { color: var(--teal-light); }
+
+    @media (max-width: 768px) {
+      .hero-404 { padding: 3rem 1.5rem; min-height: auto; }
+      .cta-group { flex-direction: column; }
+      .btn { width: 100%; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Royal Goa<span> Ride</span></a>
+      <div class="nav-links">
+        <a href="/complete-fleet.html">Fleet</a>
+        <a href="/routes.html">Routes</a>
+        <a href="/faq/">FAQ</a>
+        <a href="/contact.html">Contact</a>
+        <a href="https://wa.me/919975356697" class="nav-cta" target="_blank" rel="noopener noreferrer">Book Now</a>
+      </div>
+      <button class="nav-burger" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    <!-- 404 HERO -->
+    <section class="hero-404" role="main">
+      <div class="hero-404-inner">
+        <div class="error-code">404</div>
+        <h1 class="error-title">Page Not Found</h1>
+        <p class="error-desc">We couldn't find the page you're looking for. The road to this destination doesn't exist (yet!).</p>
+
+        <div class="cta-group">
+          <a href="/" class="btn btn-primary">Go to Home</a>
+          <a href="/complete-fleet.html" class="btn btn-secondary">Browse Fleet</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUGGESTIONS -->
+    <section class="suggestions">
+      <h2 class="suggestions-title">Here's what you can explore instead:</h2>
+
+      <div class="suggestions-grid">
+        <div class="suggestion-card">
+          <div class="suggestion-icon">🚗</div>
+          <h3 class="suggestion-title">Our Fleet</h3>
+          <p class="suggestion-desc">Browse 15+ vehicles from budget hatchbacks to luxury cars</p>
+          <a href="/complete-fleet.html">Browse Fleet →</a>
+        </div>
+
+        <div class="suggestion-card">
+          <div class="suggestion-icon">🗺️</div>
+          <h3 class="suggestion-title">Driving Routes</h3>
+          <p class="suggestion-desc">Explore 8 scenic routes across North and South Goa</p>
+          <a href="/routes.html">See Routes →</a>
+        </div>
+
+        <div class="suggestion-card">
+          <div class="suggestion-icon">❓</div>
+          <h3 class="suggestion-title">FAQs</h3>
+          <p class="suggestion-desc">Find answers to common questions about our rental service</p>
+          <a href="/faq/">Read FAQs →</a>
+        </div>
+
+        <div class="suggestion-card">
+          <div class="suggestion-icon">📧</div>
+          <h3 class="suggestion-title">Contact Us</h3>
+          <p class="suggestion-desc">Have questions? Reach out to our 24/7 support team</p>
+          <a href="/contact.html">Get in Touch →</a>
+        </div>
+
+        <div class="suggestion-card">
+          <div class="suggestion-icon">🏖️</div>
+          <h3 class="suggestion-title">Tourist Places</h3>
+          <p class="suggestion-desc">Discover Goa's best beaches and attractions</p>
+          <a href="/tourist-places.html">Explore Goa →</a>
+        </div>
+
+        <div class="suggestion-card">
+          <div class="suggestion-icon">💬</div>
+          <h3 class="suggestion-title">WhatsApp Booking</h3>
+          <p class="suggestion-desc">Book instantly. We reply within 10 minutes.</p>
+          <a href="https://wa.me/919975356697" target="_blank" rel="noopener noreferrer">Chat with Us →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <p class="footer-text">Royal Goa Ride © 2024-2026. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy-policy">Privacy Policy</a>
+        <a href="/guild/rental-policies">Rental Policies</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple nav burger toggle
+    const burger = document.querySelector('.nav-burger');
+    if (burger) {
+      burger.addEventListener('click', () => {
+        const isOpen = burger.getAttribute('aria-expanded') === 'true';
+        burger.setAttribute('aria-expanded', !isOpen);
+      });
+    }
+  </script>
+</body>
+</html>

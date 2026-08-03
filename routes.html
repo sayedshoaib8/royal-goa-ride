@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover 8 of Goa's best driving routes. North Goa Circuit, South Goa Beaches, Dudhsagar Falls, and more. Choose your adventure.">
+    <meta name="keywords" content="Goa driving routes, road trips, self drive, car rental routes, Goa travel guide">
+    <meta name="theme-color" content="#0B1829">
+    
+    <!-- OG Tags -->
+    <meta property="og:title" content="Best Driving Routes in Goa | Royal Goa Ride">
+    <meta property="og:description" content="8 scenic driving routes across Goa. Perfect for road trips, beach drives, and weekend adventures.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://royalgoaride.com/routes.html">
+    <meta property="og:image" content="https://royalgoaride.com/og-imag.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Driving Routes in Goa">
+    <meta name="twitter:description" content="Explore Goa's best roads. Road trip guides, hidden routes, and tips from locals.">
+    <meta name="twitter:image" content="https://royalgoaride.com/og-imag.webp">
+    
+    <title>Best Driving Routes in Goa | Road Trip Guide | Royal Goa Ride</title>
+    <link rel="canonical" href="https://royalgoaride.com/routes.html">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --navy: #0B1829;
+            --navy-mid: #122035;
+            --teal: #0D9488;
+            --teal-light: #14B8AA;
+            --gold: #C9A84C;
+            --gold-light: #E8C872;
+            --sand: #F5F0E8;
+            --text-dark: #0B1829;
+            --text-light: #6B7280;
+            --border: #E5E7EB;
+            --success: #10B981;
+            --warning: #F59E0B;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: #FFFFFF;
+            overflow-x: hidden;
+        }
+        
+        /* === SKIP LINK === */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: var(--navy);
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            z-index: 10000;
+            font-size: 14px;
+        }
+        
+        .skip-link:focus {
+            top: 0;
+        }
+        
+        /* === HEADER & NAV === */
+        header {
+            background: white;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+        
+        .header-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--navy);
+            text-decoration: none;
+            letter-spacing: 0.5px;
+        }
+        
+        .logo span {
+            color: var(--teal);
+        }
+        
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--teal);
+        }
+        
+        .cta-button {
+            background: var(--teal);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .cta-button:hover {
+            background: var(--teal-light);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(13, 148, 136, 0.2);
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+            }
+        }
+        
+        /* === BREADCRUMB === */
+        .breadcrumb {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 12px 20px;
+            font-size: 13px;
+            color: var(--text-light);
+        }
+        
+        .breadcrumb a {
+            color: var(--teal);
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        /* === HERO === */
+        .hero {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+        }
+        
+        /* === MAIN CONTENT === */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        
+        /* === FILTERS === */
+        .filters-section {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        .filter-label {
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 14px;
+        }
+        
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid var(--border);
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+            color: var(--text-dark);
+        }
+        
+        .filter-btn:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+        
+        .filter-btn.active {
+            background: var(--teal);
+            color: white;
+            border-color: var(--teal);
+        }
+        
+        /* === ROUTES GRID === */
+        .routes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+        
+        .route-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: all 0.3s;
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+        
+        .route-card:nth-child(1) { animation-delay: 0.1s; }
+        .route-card:nth-child(2) { animation-delay: 0.2s; }
+        .route-card:nth-child(3) { animation-delay: 0.3s; }
+        .route-card:nth-child(4) { animation-delay: 0.4s; }
+        .route-card:nth-child(5) { animation-delay: 0.5s; }
+        .route-card:nth-child(6) { animation-delay: 0.6s; }
+        .route-card:nth-child(7) { animation-delay: 0.7s; }
+        .route-card:nth-child(8) { animation-delay: 0.8s; }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .route-card:hover {
+            box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+            transform: translateY(-8px);
+        }
+        
+        .route-badge {
+            display: inline-block;
+            background: var(--teal);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .route-badge.season-monsoon {
+            background: #3B82F6;
+        }
+        
+        .route-badge.season-summer {
+            background: #F59E0B;
+        }
+        
+        .route-badge.season-winter {
+            background: #10B981;
+        }
+        
+        .route-header {
+            padding: 24px;
+            border-bottom: 1px solid var(--border);
+            background: linear-gradient(135deg, rgba(13, 148, 136, 0.05) 0%, rgba(193, 63, 102, 0.05) 100%);
+        }
+        
+        .route-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 8px;
+        }
+        
+        .route-description {
+            font-size: 14px;
+            color: var(--text-light);
+            margin-bottom: 12px;
+        }
+        
+        .route-badge-group {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .route-stats {
+            padding: 20px 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .stat {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .stat-value {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--navy);
+        }
+        
+        .route-details {
+            padding: 20px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .detail-item {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .detail-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(13, 148, 136, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 12px;
+            color: var(--teal);
+        }
+        
+        .detail-text {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+        
+        .detail-label {
+            font-size: 12px;
+            color: var(--text-light);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+        }
+        
+        .detail-value {
+            font-size: 14px;
+            color: var(--text-dark);
+            font-weight: 500;
+        }
+        
+        .route-cta {
+            padding: 20px 24px;
+            background: var(--sand);
+            border-top: 1px solid var(--border);
+            display: flex;
+            gap: 12px;
+        }
+        
+        .route-cta a {
+            flex: 1;
+            padding: 12px 16px;
+            text-align: center;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .route-cta a:first-child {
+            background: var(--teal);
+            color: white;
+        }
+        
+        .route-cta a:first-child:hover {
+            background: var(--teal-light);
+        }
+        
+        .route-cta a:last-child {
+            background: white;
+            color: var(--navy);
+            border: 2px solid var(--border);
+        }
+        
+        .route-cta a:last-child:hover {
+            border-color: var(--teal);
+            color: var(--teal);
+        }
+        
+        /* === HIGHLIGHT SECTION === */
+        .highlight-section {
+            background: var(--sand);
+            padding: 40px;
+            border-radius: 12px;
+            margin: 60px 0;
+            text-align: center;
+        }
+        
+        .highlight-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 16px;
+        }
+        
+        .highlight-section p {
+            font-size: 16px;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 24px;
+        }
+        
+        /* === FOOTER === */
+        footer {
+            background: var(--navy);
+            color: white;
+            padding: 60px 20px 20px;
+            margin-top: 80px;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-section h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--gold);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-section a:hover {
+            color: var(--gold);
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 16px;
+            margin-top: 12px;
+        }
+        
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+        
+        .footer-social a:hover {
+            background: var(--teal);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 24px;
+            text-align: center;
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* === STICKY CTA === */
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+            animation: pulse 2s infinite;
+            text-decoration: none;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+        
+        .sticky-cta:hover {
+            animation: none;
+            transform: scale(1.15);
+        }
+        
+        .sticky-cta svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-cta {
+                width: 56px;
+                height: 56px;
+            }
+        }
+        
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            .routes-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .route-card {
+                animation: none;
+                opacity: 1;
+            }
+            
+            .highlight-section {
+                padding: 24px;
+            }
+            
+            .highlight-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-wrapper">
+            <a href="/" class="logo">Royal <span>Goa</span> Ride</a>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/complete-fleet.html">Fleet</a>
+                <a href="/routes.html">Routes</a>
+                <a href="/tourist-places.html">Places</a>
+                <a href="/faq/index.html">FAQ</a>
+                <a href="/contact.html" class="cta-button">📲 Book Now</a>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Breadcrumb -->
+    <div class="breadcrumb">
+        <a href="/">Home</a> / <span>Driving Routes</span>
+    </div>
+    
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Goa's Best Driving Routes</h1>
+        <p>Explore scenic roads, hidden highways, and coastal drives. Choose your adventure and hit the road.</p>
+    </section>
+    
+    <!-- Main Content -->
+    <main id="main-content" class="container">
+        <!-- Filters -->
+        <div class="filters-section">
+            <span class="filter-label">Filter by season:</span>
+            <button class="filter-btn active" data-filter="all">All Routes</button>
+            <button class="filter-btn" data-filter="winter">Best in Winter</button>
+            <button class="filter-btn" data-filter="summer">Best in Summer</button>
+            <button class="filter-btn" data-filter="monsoon">Best in Monsoon</button>
+        </div>
+        
+        <!-- Routes Grid -->
+        <div class="routes-grid" id="routesGrid">
+            <!-- Route Cards will be populated by JS -->
+        </div>
+        
+        <!-- Mid-section Highlight CTA -->
+        <div class="highlight-section">
+            <h2>Ready for Your Goa Adventure?</h2>
+            <p>Pick your route, pick your car. We handle the rest. Reserve your perfect ride in 60 seconds.</p>
+            <a href="/complete-fleet.html" class="cta-button">Browse Vehicles</a>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Royal Goa Ride</h4>
+                <p>Self-drive car and bike rentals across Goa. Available 24/7, delivered to your hotel.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" aria-label="Facebook" title="Facebook">f</a>
+                    <a href="https://www.instagram.com/" aria-label="Instagram" title="Instagram">📷</a>
+                    <a href="https://twitter.com/" aria-label="Twitter" title="Twitter">𝕏</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="/complete-fleet.html">Fleet</a><br>
+                <a href="/routes.html">Routes</a><br>
+                <a href="/tourist-places.html">Places</a><br>
+                <a href="/faq/index.html">FAQ</a><br>
+                <a href="/contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="/guild/rental-policies.html">Rental Policies</a><br>
+                <a href="/privacy-policy.html">Privacy Policy</a><br>
+                <a href="/blog/goa-travel-guide.html">Travel Guide</a><br>
+                <a href="/contact.html">Get Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📱 +91 99753 56697</p>
+                <p>📧 bookingsroyalgoa@gmail.com</p>
+                <p>📍 Near Madgao Railway Station, Margao, Goa 403601</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Royal Goa Ride. All rights reserved. | <a href="/privacy-policy.html" style="color: rgba(255,255,255,0.6);">Privacy</a> | <a href="/guild/rental-policies.html" style="color: rgba(255,255,255,0.6);">Policies</a></p>
+        </div>
+    </footer>
+    
+    <!-- Sticky WhatsApp CTA -->
+    <a href="https://wa.me/919975356697?text=Hi%20Royal%20Goa%20Ride!%20I%20need%20help%20booking%20a%20vehicle%20for%20a%20road%20trip" class="sticky-cta" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421-7.403h-.004a9.87 9.87 0 00-5.031 1.378c-1.561.949-2.605 2.36-2.605 3.795 0 2.189 1.892 4.182 4.846 4.182.96 0 1.885-.212 2.748-.623l.385-.214 3.171.832-.847-3.035.019-.031c.651-1.043 1.023-2.28 1.023-3.111 0-2.5-2.094-4.524-4.666-4.524m5.338.369c0 2.769 2.307 5.023 5.142 5.023 2.834 0 5.144-2.254 5.144-5.023 0-2.763-2.31-5.025-5.144-5.025-2.835 0-5.142 2.262-5.142 5.025"/></svg>
+    </a>
+    
+    <script>
+        // Routes data
+        const routes = [
+            {
+                id: 1,
+                name: "North Goa Circuit",
+                description: "Baga → Anjuna → Vagator → Morjim",
+                distance: "45 km",
+                driveTime: "1.5 hrs",
+                season: "winter",
+                seasonLabel: "Best Dec–Feb",
+                recommendedVehicle: "Baleno / i20",
+                highlights: ["Clifftop views at Vagator", "Baga Beach crowds", "Hippie market Anjuna"]
+            },
+            {
+                id: 2,
+                name: "South Goa Beaches",
+                description: "Margao → Colva → Benaulim → Palolem",
+                distance: "50 km",
+                driveTime: "1.5 hrs",
+                season: "winter",
+                seasonLabel: "Best Dec–Feb",
+                recommendedVehicle: "Swift / Baleno",
+                highlights: ["Backwater fishing village vibes", "Red cliffs at Palolem", "Quieter than North Goa"]
+            },
+            {
+                id: 3,
+                name: "Dudhsagar Falls Loop",
+                description: "Margao → Kulem → Dudhsagar → Tamdi Surla",
+                distance: "80 km",
+                driveTime: "3 hrs",
+                season: "monsoon",
+                seasonLabel: "Best Aug–Sep",
+                recommendedVehicle: "Thar / Innova",
+                highlights: ["India's 5th highest waterfall", "Jungle roads", "Tamdi temple in old town"]
+            },
+            {
+                id: 4,
+                name: "Panjim Heritage",
+                description: "Panjim → Fontainhas → Basilica of Bom Jesus",
+                distance: "15 km",
+                driveTime: "1 hr",
+                season: "winter",
+                seasonLabel: "Best Oct–Mar",
+                recommendedVehicle: "Swift / i20",
+                highlights: ["Latin Quarter charm", "Portuguese architecture", "Spice market street food"]
+            },
+            {
+                id: 5,
+                name: "Sunset Coastal Drive",
+                description: "Candolim → Sinquerim → Nerul → Arossim",
+                distance: "35 km",
+                driveTime: "1.5 hrs",
+                season: "winter",
+                seasonLabel: "Best Sep–May",
+                recommendedVehicle: "Creta / Baleno",
+                highlights: ["Golden Hour coastal views", "Fort Aguada stop", "Arossim Church"]
+            },
+            {
+                id: 6,
+                name: "Spice Farm Loop",
+                description: "Ponda → Spice Plantations → Sahakari Spice Farm",
+                distance: "25 km",
+                driveTime: "1 hr",
+                season: "summer",
+                seasonLabel: "Best Apr–Jun",
+                recommendedVehicle: "Swift / i20",
+                highlights: ["Cardamom, pepper, cinnamon fields", "Farm lunch included", "Greenery photo ops"]
+            },
+            {
+                id: 7,
+                name: "Basilica & Old Goa",
+                description: "Panjim → Basilica of Bom Jesus → Convent of Santa Monica",
+                distance: "10 km",
+                driveTime: "45 min",
+                season: "winter",
+                seasonLabel: "Best Oct–May",
+                recommendedVehicle: "Swift / i20",
+                highlights: ["UNESCO heritage site", "17th-century churches", "Archaeology museum"]
+            },
+            {
+                id: 8,
+                name: "Arvalem Waterfall Adventure",
+                description: "Sanvordem → Arvalem Caves → Waterfall Trek",
+                distance: "20 km",
+                driveTime: "1 hr",
+                season: "monsoon",
+                seasonLabel: "Best Jul–Oct",
+                recommendedVehicle: "Thar / Swift",
+                highlights: ["Ancient cave carvings", "Nature trek", "Rock formations"]
+            }
+        ];
+        
+        // Render routes
+        function renderRoutes(filter = 'all') {
+            const routesGrid = document.getElementById('routesGrid');
+            routesGrid.innerHTML = '';
+            
+            const filtered = filter === 'all' 
+                ? routes 
+                : routes.filter(r => r.season === filter);
+            
+            filtered.forEach((route, index) => {
+                const card = document.createElement('article');
+                card.className = 'route-card';
+                card.setAttribute('data-route-id', route.id);
+                card.innerHTML = `
+                    <div class="route-header">
+                        <h3>${route.name}</h3>
+                        <p class="route-description">${route.description}</p>
+                        <div class="route-badge-group">
+                            <span class="route-badge season-${route.season}">${route.seasonLabel}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-stats">
+                        <div class="stat">
+                            <span class="stat-label">📍 Distance</span>
+                            <span class="stat-value">${route.distance}</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">⏱️ Drive Time</span>
+                            <span class="stat-value">${route.driveTime}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="route-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">🚗</div>
+                            <div class="detail-text">
+                                <span class="detail-label">Best Vehicle</span>
+                                <span class="detail-value">${route.recommendedVehicle}</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">⭐</div>
+                            <div class="detail-text">
+                                <span class="detail-label">Highlights</span>
+                                <span class="detail-value">${route.highlights[0]}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="route-cta">
+                        <a href="https://wa.me/919975356697?text=Hi!%20I%20want%20to%20book%20a%20${route.recommendedVehicle.split('/')[0].trim()}%20for%20the%20${route.name}%20route">Book Now</a>
+                        <a href="/complete-fleet.html">View Fleet</a>
+                    </div>
+                `;
+                routesGrid.appendChild(card);
+            });
+        }
+        
+        // Filter handlers
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                renderRoutes(this.getAttribute('data-filter'));
+            });
+        });
+        
+        // Initial render
+        renderRoutes();
+    </script>
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Goa's Best Driving Routes",
+        "description": "Discover 8 scenic driving routes across Goa, from North Goa Circuit to Dudhsagar Falls. Perfect for road trips and self-drive adventures.",
+        "image": "https://royalgoaride.com/og-imag.webp",
+        "author": {
+            "@type": "Organization",
+            "name": "Royal Goa Ride"
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2024-08-02"
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Royal Goa Ride",
+        "image": "https://royalgoaride.com/og-imag.webp",
+        "description": "Self-drive car and bike rentals across Goa. 24/7 availability, hotel delivery.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Near Madgao Railway Station",
+            "addressLocality": "Margao",
+            "addressRegion": "Goa",
+            "postalCode": "403601",
+            "addressCountry": "IN"
+        },
+        "telephone": "+91 99753 56697",
+        "url": "https://royalgoaride.com",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "847"
+        }
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://royalgoaride.com"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Driving Routes",
+                "item": "https://royalgoaride.com/routes.html"
+            }
+        ]
+    }
+    </script>
+</body>
+</html>
