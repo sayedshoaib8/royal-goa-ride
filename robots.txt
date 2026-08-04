@@ -1,17 +1,39 @@
 # Royal Goa Ride - Robots.txt
-# This file controls how search engines crawl the website
+# Production crawl policy for search, AI, and discovery engines
 
-# Allow all bots by default
 User-agent: *
 Allow: /
-
-# Disallow private paths (if any)
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
+Disallow: /assets/private/
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
 
-# Sitemap location
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
 Sitemap: https://royalgoaride.com/sitemap.xml
-
-# Crawl delay to be respectful
+Host: royalgoaride.com
 Crawl-delay: 1
