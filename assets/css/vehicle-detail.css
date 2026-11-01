@@ -1,0 +1,74 @@
+:root {
+  color-scheme: light;
+  --navy: #0b1829;
+  --navy-soft: #12243b;
+  --teal: #0d9488;
+  --gold: #c9a84c;
+  --sand: #f5f0e8;
+  --ink: #1f2937;
+  --muted: #596575;
+  --line: #e3e7ec;
+  --white: #fff;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; color: var(--ink); line-height: 1.65; }
+a { color: var(--teal); }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.skip-link { position: absolute; top: -4rem; left: 1rem; z-index: 20; padding: .7rem 1rem; background: var(--white); }
+.skip-link:focus { top: 1rem; }
+.site-header { background: var(--navy); color: var(--white); }
+.nav-inner, .content, .footer-inner { width: min(1120px, calc(100% - 2rem)); margin-inline: auto; }
+.nav-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { color: var(--white); text-decoration: none; font-weight: 750; font-size: 1.15rem; }
+.brand span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 1.25rem; margin: 0; padding: 0; list-style: none; }
+.nav-links a { color: var(--white); text-decoration: none; }
+.nav-links a:hover { color: var(--gold); }
+.menu-toggle { display: none; border: 1px solid #536173; border-radius: .5rem; padding: .55rem .75rem; background: transparent; color: var(--white); font: inherit; }
+.hero { background: linear-gradient(125deg, var(--navy), var(--navy-soft)); color: var(--white); }
+.hero-inner { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 3rem; padding-block: clamp(3rem, 8vw, 6rem); }
+.eyebrow { color: var(--gold); font-size: .82rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
+h1, h2 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; }
+h1 { margin: .6rem 0 1rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
+.hero-copy { max-width: 42rem; color: #e0e7ef; }
+.price { margin: 1.5rem 0; font-size: 1.25rem; font-weight: 700; }
+.price strong { color: var(--gold); font-size: 2rem; }
+.actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.button { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: .7rem 1.1rem; border-radius: .55rem; background: var(--teal); color: var(--white); font-weight: 700; text-decoration: none; }
+.button.secondary { border: 1px solid #9aa8b8; background: transparent; }
+.vehicle-image { display: grid; min-height: 290px; place-items: center; overflow: hidden; border: 1px solid #ffffff25; border-radius: 1rem; background: linear-gradient(145deg, #1a344d, #0c1a2a); }
+.vehicle-image img { display: block; width: 100%; max-height: 420px; object-fit: contain; }
+.vehicle-placeholder { padding: 2rem; color: #dce5ee; text-align: center; }
+.vehicle-placeholder span { display: block; font-size: 5rem; }
+.breadcrumb { padding-block: .9rem; background: var(--sand); font-size: .9rem; }
+.breadcrumb ol { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0; padding: 0; list-style: none; }
+.breadcrumb li + li::before { content: "/"; margin-right: .55rem; color: #758091; }
+.breadcrumb a { color: var(--ink); }
+.section { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.section.alt { background: var(--sand); }
+.section h2 { margin: 0 0 1rem; color: var(--navy); font-size: clamp(1.7rem, 3vw, 2.4rem); }
+.section-intro { max-width: 48rem; color: var(--muted); }
+.spec-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1.75rem; }
+.spec { padding: 1.1rem; border: 1px solid var(--line); border-radius: .75rem; background: var(--white); }
+.spec dt { color: var(--muted); font-size: .82rem; }
+.spec dd { margin: .2rem 0 0; color: var(--navy); font-weight: 750; }
+.notice { margin-top: 1.5rem; padding: 1rem 1.1rem; border-left: 4px solid var(--teal); border-radius: .35rem; background: var(--white); }
+.links { display: flex; flex-wrap: wrap; gap: 1rem; }
+.site-footer { padding-block: 2rem; background: var(--navy); color: #d9e1ea; }
+.site-footer p { margin: .35rem 0; }
+.site-footer a { color: var(--white); }
+.footer-nav { display: flex; flex-wrap: wrap; gap: .8rem 1.25rem; margin-top: 1rem; }
+@media (max-width: 720px) {
+  .menu-toggle { display: inline-flex; }
+  .nav-links { display: none; position: absolute; z-index: 5; top: 72px; right: 0; left: 0; padding: 1rem; background: var(--navy); flex-direction: column; align-items: stretch; }
+  .nav-links.is-open { display: flex; }
+  .nav-links a { display: block; padding: .55rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 1.75rem; }
+  .vehicle-image { min-height: 220px; }
+  .spec-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 420px) { .spec-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
