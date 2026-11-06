@@ -29,13 +29,15 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hyundai i20 in Goa | ₹1,200/day | Royal Goa Ride">
   <meta name="twitter:description" content="Request a Hyundai i20 self-drive rental in Goa from ₹1,200/day. Contact Royal Goa Ride to confirm vehicle availability, features, and delivery arrangements.">
-/assets/image/og-img.webp
-  <!-- Fonts -->
+ <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Schema -->
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://royalgoaride.com/"},{"@type":"ListItem","position":2,"name":"Fleet","item":"https://royalgoaride.com/complete-fleet"},{"@type":"ListItem","position":3,"name":"Hyundai i20 Rental","item":"https://royalgoaride.com/vehicle/i20-rental-goa"}]}
+  </script>
 
 
   <style>
@@ -161,6 +163,7 @@
       background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.08);
       aspect-ratio: 4/3;
     }
+    .hero-img-wrap img { display: block; width: 100%; height: 100%; object-fit: cover; }
     .hero-img-placeholder {
       width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center;
       justify-content: center; gap: 1rem; padding: 2rem;
@@ -442,11 +445,8 @@
           </a>
         </div>
       </div>
-      <div class="hero-img-wrap" role="img" aria-label="Hyundai i20 vehicle image">
-        <div class="hero-img-placeholder">
-          <div class="vehicle-icon-large" aria-hidden="true">🚗</div>
-          <p class="hero-img-label">Hyundai i20<br>Ask about availability</p>
-        </div>
+      <div class="hero-img-wrap">
+        <img src="/assets/image/Hyundai%20i20%20(Manual).webp" alt="Hyundai i20 hatchback available for self-drive rental in Goa" width="500" height="375" fetchpriority="high" decoding="async">
       </div>
     </div>
   </section>
@@ -680,7 +680,7 @@
             </a>
 <a href="/vehicle/baleno-rental-goa" class="related-card">
               <div class="related-info">
-                <span class="related-name">Hyundai Baleno</span>
+                <span class="related-name">Maruti Baleno</span>
                 <span class="related-price">₹1,200/day</span>
               </div>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
