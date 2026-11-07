@@ -345,7 +345,7 @@
     <section class="fleet-section" aria-labelledby="fleet-grid-label">
       <div class="fleet-container">
         <div class="fleet-header">
-          <p class="fleet-count" aria-live="polite">Showing <strong id="vehicle-count">12</strong> vehicles</p>
+          <p class="fleet-count" aria-live="polite">Showing <strong id="vehicle-count">24</strong> vehicles</p>
           <p style="font-size:.8rem;color:var(--text-muted);">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2" aria-hidden="true" style="display:inline;vertical-align:middle;margin-right:.25rem"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.97-1.67L23 6H6"/></svg>
             Select up to 2 vehicles to compare
@@ -355,7 +355,7 @@
         <div class="fleet-grid" id="fleetGrid" role="list" aria-label="Vehicle fleet">
 
           <!-- 1. Maruti Swift -->
-          <article class="vehicle-card reveal" data-type="hatchback" data-name="Maruti Swift" data-rate="1200" data-seats="5" data-fuel="Petrol" data-transmission="Manual" data-deposit="5000" role="listitem">
+          <article class="vehicle-card reveal" data-type="hatchback" data-name="Maruti Swift" data-rate="1200" data-manual-price="1200" data-automatic-price="1500" data-seats="5" data-fuel="Petrol" data-transmission="Manual/Automatic" data-deposit="5000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Swift for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -379,8 +379,8 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹1,200 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹5,000 · refundable</div>
+                  <div class="price-main">Manual ₹1,200/day</div>
+                  <div class="price-note">Automatic ₹1,500/day</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Swift%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Swift on WhatsApp">Book Now</a>
               </div>
@@ -388,7 +388,7 @@
           </article>
 
           <!-- 2. Maruti Baleno -->
-          <article class="vehicle-card reveal reveal--d1" data-type="hatchback" data-name="Maruti Baleno" data-rate="1200" data-seats="5" data-fuel="Petrol" data-transmission="Manual/Auto" data-deposit="5000" role="listitem">
+          <article class="vehicle-card reveal reveal--d1" data-type="hatchback" data-name="Maruti Baleno" data-rate="1200" data-manual-price="1200" data-automatic-price="1500" data-seats="5" data-fuel="Petrol" data-transmission="Manual/Automatic" data-deposit="5000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Baleno for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -411,8 +411,8 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹1,200 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹5,000 · refundable</div>
+                  <div class="price-main">Manual ₹1,200/day</div>
+                  <div class="price-note">Automatic ₹1,500/day</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Baleno%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Baleno">Book Now</a>
               </div>
@@ -420,7 +420,7 @@
           </article>
 
           <!-- 3. Hyundai i20 -->
-          <article class="vehicle-card reveal reveal--d2" data-type="hatchback" data-name="Hyundai i20" data-rate="1200" data-seats="5" data-fuel="Petrol" data-transmission="Manual/Auto" data-deposit="5000" role="listitem">
+          <article class="vehicle-card reveal reveal--d2" data-type="hatchback" data-name="Hyundai i20" data-rate="1300" data-manual-price="1300" data-automatic-price="1600" data-seats="5" data-fuel="Petrol" data-transmission="Manual/Automatic" data-deposit="5000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Hyundai i20 for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -442,8 +442,8 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹1,200 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹5,000 · refundable</div>
+                  <div class="price-main">Manual ₹1,300/day</div>
+                  <div class="price-note">Automatic ₹1,600/day</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20i20%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Hyundai i20">Book Now</a>
               </div>
@@ -451,7 +451,7 @@
           </article>
 
           <!-- 4. Hyundai Creta — FEATURED -->
-          <article class="vehicle-card vehicle-card--featured reveal" data-type="suv" data-name="Hyundai Creta" data-rate="2200" data-seats="5" data-fuel="Diesel/Petrol" data-transmission="Manual/Auto" data-deposit="7000" role="listitem">
+          <article class="vehicle-card vehicle-card--featured reveal" data-type="suv" data-name="Hyundai Creta" data-rate="2500" data-manual-price="2500" data-automatic-price="3200" data-seats="5" data-fuel="Diesel/Petrol" data-transmission="Manual/Automatic" data-deposit="7000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Hyundai Creta for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -474,26 +474,26 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹2,200 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹7,000 · refundable</div>
+                  <div class="price-main">Manual ₹2,500/day</div>
+                  <div class="price-note">Automatic ₹3,200/day</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Hyundai%20Creta%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Hyundai Creta">Book Now</a>
               </div>
             </div>
           </article>
 
-          <!-- 5. Maruti Dzire (Sedan) -->
-          <article class="vehicle-card reveal reveal--d1" data-type="sedan" data-name="Maruti Dzire" data-rate="1200" data-seats="5" data-fuel="Petrol/CNG" data-transmission="Manual/Auto" data-deposit="5000" role="listitem">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Dzire for comparison" aria-pressed="false">
+          <!-- 5. Maruti Swift Dzire (Sedan) -->
+          <article class="vehicle-card reveal reveal--d1" data-type="sedan" data-name="Maruti Swift Dzire" data-rate="1200" data-manual-price="1200" data-automatic-price="1500" data-seats="5" data-fuel="Petrol/CNG" data-transmission="Manual/Automatic" data-deposit="5000" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Swift Dzire for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <span class="vehicle-card__compare-label">Select to compare</span>
             <div class="vehicle-card__image-wrap">
-              <div role="img" aria-label="Maruti Dzire image not available" class="vehicle-card__image" style="min-height:200px;display:grid;place-items:center;background:linear-gradient(135deg,#12243b,#0b1829);color:#fff;font-size:3rem;">🚘</div>
+              <img src="image/Maruti-Swift-Dzire.jpg" alt="Maruti Swift Dzire rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="1280" />
             </div>
             <div class="vehicle-card__body">
               <p class="vehicle-card__for">Best for Business Travelers &amp; Couples</p>
-              <h2 class="vehicle-card__name"><a href="/vehicle/maruti-dzire-rental-goa" style="color:inherit">Maruti Dzire</a></h2>
+              <h2 class="vehicle-card__name"><a href="/vehicle/maruti-dzire-rental-goa" style="color:inherit">Maruti Swift Dzire</a></h2>
               <p class="vehicle-card__tagline">A sedan option for self-drive trips. Confirm vehicle details and availability for your dates.</p>
 
               <div class="vehicle-card__specs">
@@ -505,26 +505,26 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹1,200 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹5,000 · refundable</div>
+                  <div class="price-main">Manual ₹1,200/day</div>
+                  <div class="price-note">Automatic ₹1,500/day</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Dzire%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Dzire">Book Now</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Swift%20Dzire%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Swift Dzire">Book Now</a>
               </div>
             </div>
           </article>
 
-          <!-- 6. Mahindra Thar -->
-          <article class="vehicle-card reveal reveal--d2" data-type="suv" data-name="Mahindra Thar" data-rate="3500" data-seats="4" data-fuel="Diesel/Petrol" data-transmission="Manual/Auto" data-deposit="10000" role="listitem" id="vehicle-thar">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mahindra Thar for comparison" aria-pressed="false">
+          <!-- 6. Mahindra Thar Hardtop -->
+          <article class="vehicle-card reveal reveal--d2" data-type="suv" data-name="Mahindra Thar Hardtop" data-rate="3000" data-manual-price="3000" data-automatic-price="3500" data-seats="4" data-fuel="Diesel/Petrol" data-transmission="Manual/Automatic" data-deposit="10000" role="listitem" id="vehicle-thar">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mahindra Thar Hardtop for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <div class="vehicle-card__badge badge--teal">Adventure Pick</div>
             <div class="vehicle-card__image-wrap">
-              <img src="assets/image/Mahindra-Thar-Hardtop.webp" alt="Mahindra Thar rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1152" height="1440" />
+              <img src="assets/image/Mahindra-Thar-Hardtop.webp" alt="Mahindra Thar Hardtop rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1152" height="1440" />
             </div>
             <div class="vehicle-card__body">
               <p class="vehicle-card__for">SUV option for Goa trips</p>
-              <h2 class="vehicle-card__name"><a href="/vehicle/mahindra-thar-rental-goa" style="color:inherit">Mahindra Thar</a></h2>
+              <h2 class="vehicle-card__name"><a href="/vehicle/mahindra-thar-rental-goa" style="color:inherit">Mahindra Thar Hardtop</a></h2>
               <p class="vehicle-card__tagline">A rugged SUV option. Confirm vehicle configuration and permitted routes before booking.</p>
 
               <div class="vehicle-card__specs">
@@ -536,16 +536,16 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹3,500 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹10,000 · refundable</div>
+                  <div class="price-main">Manual ₹3,000/day</div>
+                  <div class="price-note">Automatic ₹3,500/day</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Mahindra%20Thar%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Mahindra Thar">Book Now</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Mahindra%20Thar%20Hardtop%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Mahindra Thar Hardtop">Book Now</a>
               </div>
             </div>
           </article>
 
           <!-- 7. Toyota Innova Crysta -->
-          <article class="vehicle-card reveal" data-type="suv" data-name="Toyota Innova Crysta" data-rate="3500" data-seats="7" data-fuel="Diesel" data-transmission="Manual" data-deposit="10000" role="listitem">
+          <article class="vehicle-card reveal" data-type="suv" data-name="Toyota Innova Crysta" data-rate="3000" data-manual-price="3000" data-automatic-price="3500" data-seats="7" data-fuel="Diesel" data-transmission="Manual/Automatic" data-deposit="10000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Toyota Innova Crysta for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -567,8 +567,8 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹3,500 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹10,000 · refundable</div>
+                  <div class="price-main">Manual ₹3,000/day</div>
+                  <div class="price-note">Automatic ₹3,500/day</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Toyota%20Innova%20Crysta%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Toyota Innova Crysta">Book Now</a>
               </div>
@@ -576,7 +576,7 @@
           </article>
 
           <!-- 8. Toyota Fortuner -->
-          <article class="vehicle-card reveal reveal--d1" data-type="suv" data-name="Toyota Fortuner" data-rate="6000" data-seats="7" data-fuel="Diesel" data-transmission="Automatic" data-deposit="15000" role="listitem">
+          <article class="vehicle-card reveal reveal--d1" data-type="suv" data-name="Toyota Fortuner" data-rate="6000" data-manual-price="0" data-automatic-price="6000" data-seats="7" data-fuel="Diesel" data-transmission="Automatic" data-deposit="15000" role="listitem">
             <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Toyota Fortuner for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
@@ -597,17 +597,17 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹6,000 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹15,000 · refundable</div>
+                  <div class="price-main">₹6,000/day</div>
+                  <div class="price-note">Automatic only</div>
                 </div>
                 <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Toyota%20Fortuner%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Toyota Fortuner">Book Now</a>
               </div>
             </div>
           </article>
 
-          <!-- 9. Mercedes C300 -->
-          <article class="vehicle-card reveal reveal--d2" data-type="luxury" data-name="Mercedes-Benz C300" data-rate="0" data-seats="5" data-fuel="Petrol" data-transmission="Automatic" data-deposit="0" role="listitem">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mercedes C300 for comparison" aria-pressed="false">
+          <!-- 9. Mercedes-Benz C300 -->
+          <article class="vehicle-card reveal reveal--d2" data-type="luxury" data-name="Mercedes-Benz C300" data-rate="30000" data-manual-price="0" data-automatic-price="30000" data-seats="5" data-fuel="Petrol" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mercedes-Benz C300 for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <div class="vehicle-card__badge badge--gold">Luxury</div>
@@ -627,26 +627,26 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main" style="font-size:1.25rem">On Request</div>
-                  <div class="price-note">Call for personalised pricing</div>
+                  <div class="price-main" style="font-size:1.25rem">₹30,000/day</div>
+                  <div class="price-note">Automatic only</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%27m%20interested%20in%20Mercedes%20C300%20rental%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Enquire about Mercedes C300" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy)">Enquire</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%27m%20interested%20in%20Mercedes%20C300%20rental%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Enquire about Mercedes-Benz C300" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy)">Enquire</a>
               </div>
             </div>
           </article>
 
-          <!-- 10. Audi A3 -->
-          <article class="vehicle-card reveal" data-type="luxury" data-name="Audi A3" data-rate="0" data-seats="5" data-fuel="Petrol" data-transmission="Automatic" data-deposit="0" role="listitem">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Audi A3 for comparison" aria-pressed="false">
+          <!-- 10. Audi -->
+          <article class="vehicle-card reveal" data-type="luxury" data-name="Audi" data-rate="25000" data-manual-price="0" data-automatic-price="25000" data-seats="5" data-fuel="Petrol" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Audi for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <div class="vehicle-card__badge badge--gold">Luxury</div>
             <div class="vehicle-card__image-wrap">
-              <img src="assets/image/Audi-A3.webp" alt="Audi A3 rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="1280" />
+              <img src="assets/image/Audi-A3.webp" alt="Audi rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="1280" />
             </div>
             <div class="vehicle-card__body">
               <p class="vehicle-card__for">Best for Special Occasions</p>
-              <h2 class="vehicle-card__name"><a href="/vehicle/audi-a3-rental-goa" style="color:inherit">Audi A3</a></h2>
+              <h2 class="vehicle-card__name"><a href="/vehicle/audi-a3-rental-goa" style="color:inherit">Audi</a></h2>
               <p class="vehicle-card__tagline">The sportiest luxury car in our fleet. German engineering meets Goa's coastal roads.</p>
               <div class="vehicle-card__specs">
                 <span class="spec-chip">👥 5 Seats</span>
@@ -656,26 +656,26 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main" style="font-size:1.25rem">On Request</div>
-                  <div class="price-note">Call for personalised pricing</div>
+                  <div class="price-main" style="font-size:1.25rem">₹25,000/day</div>
+                  <div class="price-note">Automatic only</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%27m%20interested%20in%20Audi%20A3%20rental%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Enquire about Audi A3" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy)">Enquire</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%27m%20interested%20in%20Audi%20rental%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Enquire about Audi" style="background:linear-gradient(135deg,var(--gold),var(--gold-light));color:var(--navy)">Enquire</a>
               </div>
             </div>
           </article>
 
-          <!-- 11. Honda Activa (Bike) -->
-          <article class="vehicle-card reveal reveal--d1" data-type="bike" data-name="Honda Activa" data-rate="400" data-seats="2" data-fuel="Petrol" data-transmission="Automatic" data-deposit="2000" role="listitem">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Honda Activa for comparison" aria-pressed="false">
+          <!-- 11. Yamaha Fascino 125 (Bike) -->
+          <article class="vehicle-card reveal reveal--d1" data-type="bike" data-name="Yamaha Fascino 125" data-rate="600" data-manual-price="0" data-automatic-price="600" data-seats="2" data-fuel="Petrol" data-transmission="Automatic" data-deposit="2000" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Yamaha Fascino 125 for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <div class="vehicle-card__badge badge--green">Best Value</div>
             <div class="vehicle-card__image-wrap" style="background:linear-gradient(135deg,#064e3b,#0B1829)">
-              <img src="assets/image/honda-activa-125.jpeg" alt="Honda Activa rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1280" height="960">
+              <img src="assets/image/Honda Activa Fasino 125.jpeg" alt="Yamaha Fascino 125 rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1280" height="960">
             </div>
             <div class="vehicle-card__body">
               <p class="vehicle-card__for">Best for Solo Travelers &amp; Couples</p>
-              <h2 class="vehicle-card__name"><a href="/vehicle/honda-activa-rental-goa" style="color:inherit">Honda Activa</a></h2>
+              <h2 class="vehicle-card__name"><a href="/vehicle/honda-activa-rental-goa" style="color:inherit">Yamaha Fascino 125</a></h2>
               <p class="vehicle-card__tagline">Automatic petrol scooter option. Confirm current availability and included equipment.</p>
 
               <div class="vehicle-card__specs">
@@ -686,26 +686,26 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹400 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹2,000 · refundable</div>
+                  <div class="price-main">₹600/day</div>
+                  <div class="price-note">Automatic only</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Honda%20Activa%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Honda Activa">Book Now</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Yamaha%20Fascino%20125%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Yamaha Fascino 125">Book Now</a>
               </div>
             </div>
           </article>
 
-          <!-- 12. Royal Enfield (Bike) -->
-          <article class="vehicle-card reveal reveal--d2" data-type="bike" data-name="Royal Enfield" data-rate="700" data-seats="2" data-fuel="Petrol" data-transmission="Manual" data-deposit="3000" role="listitem">
-            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Royal Enfield for comparison" aria-pressed="false">
+          <!-- 12. Royal Enfield Hunter 350 (Bike) -->
+          <article class="vehicle-card reveal reveal--d2" data-type="bike" data-name="Royal Enfield Hunter 350" data-rate="2000" data-manual-price="2000" data-automatic-price="0" data-seats="2" data-fuel="Petrol" data-transmission="Manual" data-deposit="3000" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Royal Enfield Hunter 350 for comparison" aria-pressed="false">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
             </button>
             <div class="vehicle-card__badge badge--navy">Iconic</div>
             <div class="vehicle-card__image-wrap" style="background:linear-gradient(135deg,#1c0a00,#0B1829)">
-              <img src="assets/image/Royal-Enfield.png" alt="Royal Enfield rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1448" height="1086">
+              <img src="assets/image/Royal-Enfield.png" alt="Royal Enfield Hunter 350 rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="1448" height="1086">
             </div>
             <div class="vehicle-card__body">
               <p class="vehicle-card__for">Best for Long-Distance Riders</p>
-              <h2 class="vehicle-card__name"><a href="/vehicle/royal-enfield-rental-goa" style="color:inherit">Royal Enfield</a></h2>
+              <h2 class="vehicle-card__name"><a href="/vehicle/royal-enfield-rental-goa" style="color:inherit">Royal Enfield Hunter 350</a></h2>
               <p class="vehicle-card__tagline">Manual petrol motorcycle option. Confirm current model and included equipment.</p>
               <div class="vehicle-card__specs">
                 <span class="spec-chip">👥 2 Riders</span>
@@ -715,14 +715,134 @@
               </div>
               <div class="vehicle-card__pricing">
                 <div>
-                  <div class="price-main">₹700 <span class="price-period">/day</span></div>
-                  <div class="price-note">Deposit ₹3,000 · refundable</div>
+                  <div class="price-main">₹2,000/day</div>
+                  <div class="price-note">Manual only</div>
                 </div>
-                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Royal%20Enfield%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Royal Enfield">Book Now</a>
+                <a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Royal%20Enfield%20Hunter%20350%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Royal Enfield Hunter 350">Book Now</a>
               </div>
             </div>
           </article>
 
+          <article class="vehicle-card reveal" data-type="hatchback" data-name="Maruti Ignis" data-rate="1200" data-manual-price="1200" data-automatic-price="1500" data-seats="5" data-fuel="Confirm with team" data-transmission="Manual/Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Ignis for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Maruti Ignis.webp" alt="Maruti Ignis rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Maruti Ignis</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 5 Seats</span><span class="spec-chip">&#9881;&#65039; Manual / Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">Manual ₹1,200/day</div><div class="price-note">Automatic ₹1,500/day</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Ignis%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Ignis on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Maruti Brezza" data-rate="2000" data-manual-price="2000" data-automatic-price="2500" data-seats="5" data-fuel="Confirm with team" data-transmission="Manual/Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Brezza for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Maruti Brezza.webp" alt="Maruti Brezza rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Maruti Brezza</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 5 Seats</span><span class="spec-chip">&#9881;&#65039; Manual / Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">Manual ₹2,000/day</div><div class="price-note">Automatic ₹2,500/day</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Brezza%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Brezza on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Maruti Ertiga" data-rate="2200" data-manual-price="2200" data-automatic-price="3000" data-seats="7" data-fuel="Confirm with team" data-transmission="Manual/Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Maruti Ertiga for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Maruti Ertiga.webp" alt="Maruti Ertiga rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Maruti Ertiga</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 7 Seats</span><span class="spec-chip">&#9881;&#65039; Manual / Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">Manual ₹2,200/day</div><div class="price-note">Automatic ₹3,000/day</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Maruti%20Ertiga%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Maruti Ertiga on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Kia Carens" data-rate="2500" data-manual-price="2500" data-automatic-price="3000" data-seats="7" data-fuel="Confirm with team" data-transmission="Manual/Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Kia Carens for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Kia Carens.webp" alt="Kia Carens rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Kia Carens</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 7 Seats</span><span class="spec-chip">&#9881;&#65039; Manual / Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">Manual ₹2,500/day</div><div class="price-note">Automatic ₹3,000/day</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Kia%20Carens%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Kia Carens on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Toyota Innova Hycross" data-rate="3500" data-manual-price="0" data-automatic-price="3500" data-seats="7" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Toyota Innova Hycross for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="image/Toyota-Innova-Hycross.jpeg" alt=""><span aria-hidden="true" style="font-size:4rem">&#128656;</span></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Toyota Innova Hycross</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 7 Seats</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹3,500/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Toyota%20Innova%20Hycross%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Toyota Innova Hycross on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Mahindra Thar Soft Top" data-rate="3300" data-manual-price="3300" data-automatic-price="4000" data-seats="4" data-fuel="Confirm with team" data-transmission="Manual/Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mahindra Thar Soft Top for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Mahindra Thar Soft Top.webp" alt="Mahindra Thar Soft Top rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Mahindra Thar Soft Top</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 4 Seats</span><span class="spec-chip">&#9881;&#65039; Manual / Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">Manual ₹3,300/day</div><div class="price-note">Automatic ₹4,000/day</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Mahindra%20Thar%20Soft%20Top%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Mahindra Thar Soft Top on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="suv" data-name="Mahindra Thar Roxx" data-rate="6500" data-manual-price="0" data-automatic-price="6500" data-seats="5" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mahindra Thar Roxx for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="https://image2url.com/r2/default/images/1771085007230-e3056cd4-758f-43a1-857c-024057a6fdd5.jpeg" alt="Mahindra Thar Roxx rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Mahindra Thar Roxx</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 5 Seats</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹6,500/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Mahindra%20Thar%20Roxx%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Mahindra Thar Roxx on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="luxury" data-name="Audi" data-rate="25000" data-manual-price="0" data-automatic-price="25000" data-seats="5" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Audi for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Audi-A3.webp" alt="Audi rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Audi</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 5 Seats</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹25,000/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Audi%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Audi on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="luxury" data-name="Mini Cooper" data-rate="20000" data-manual-price="0" data-automatic-price="20000" data-seats="4" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Mini Cooper for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="https://image2url.com/r2/default/images/1771083165899-7695a97a-57e7-4cf7-98c7-9f88cc0a2dbe.jpeg" alt="Mini Cooper"><span aria-hidden="true" style="font-size:4rem">&#128663;</span></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Mini Cooper</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 4 Seats</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹20,000/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Mini%20Cooper%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Mini Cooper on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="luxury" data-name="Jaguar XE" data-rate="18000" data-manual-price="0" data-automatic-price="18000" data-seats="5" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Jaguar XE for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Available</div>
+            <div class="vehicle-card__image-wrap"><img src="image/Jaguar-XE.webp" alt="Jaguar XE"><span aria-hidden="true" style="font-size:4rem">&#128663;</span></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Self-drive option for Goa trips</p><h2 class="vehicle-card__name">Jaguar XE</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 5 Seats</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹18,000/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Jaguar%20XE%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Jaguar XE on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="bike" data-name="Royal Enfield Bullet 350" data-rate="2000" data-manual-price="2000" data-automatic-price="0" data-seats="2" data-fuel="Confirm with team" data-transmission="Manual" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Royal Enfield Bullet 350 for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Motorcycle</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Royal-Enfield.png" alt="Royal Enfield Bullet 350 rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Two-wheel option for Goa trips</p><h2 class="vehicle-card__name">Royal Enfield Bullet 350</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 2 Riders</span><span class="spec-chip">&#9881;&#65039; Manual</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹2,000/day</div><div class="price-note">Manual only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Royal%20Enfield%20Bullet%20350%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Royal Enfield Bullet 350 on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
+          <article class="vehicle-card reveal" data-type="bike" data-name="Yamaha Fascino Fleet" data-rate="600" data-manual-price="0" data-automatic-price="600" data-seats="2" data-fuel="Confirm with team" data-transmission="Automatic" data-deposit="0" role="listitem">
+            <button class="vehicle-card__check" onclick="toggleCompare(this)" aria-label="Select Yamaha Fascino Fleet for comparison" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg></button>
+            <span class="vehicle-card__compare-label">Select to compare</span><div class="vehicle-card__badge badge--teal">Scooter</div>
+            <div class="vehicle-card__image-wrap"><img src="assets/image/Honda Activa Fasino 125.jpeg" alt="Yamaha Fascino Fleet rental in Goa" loading="lazy" decoding="async" class="vehicle-card__image" width="960" height="720" /></div>
+            <div class="vehicle-card__body"><p class="vehicle-card__for">Two-wheel option for Goa trips</p><h2 class="vehicle-card__name">Yamaha Fascino Fleet</h2>
+              <p class="vehicle-card__tagline">Contact Royal Goa Ride to confirm dates, vehicle details, and booking terms.</p>
+              <div class="vehicle-card__specs"><span class="spec-chip">&#128101; 2 Riders</span><span class="spec-chip">&#9881;&#65039; Automatic</span><span class="spec-chip">&#9981; Confirm with team</span></div>
+              <div class="vehicle-card__pricing"><div><div class="price-main">₹600/day</div><div class="price-note">Automatic only</div></div><a href="https://wa.me/919975356697?text=Hi%2C%20I%20want%20to%20book%20a%20Yamaha%20Fascino%20Fleet%20in%20Goa" class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer" aria-label="Book Yamaha Fascino Fleet on WhatsApp">Book Now</a></div>
+            </div>
+          </article>
         </div><!-- /fleet-grid -->
 
         <!-- EMPTY STATE -->
