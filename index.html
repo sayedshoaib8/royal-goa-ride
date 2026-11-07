@@ -2042,7 +2042,10 @@
     }
   </style>
 
-  <link rel="manifest" href="/manifest.json"></head>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/assets/css/redesign.css">
+  <script defer src="/assets/js/redesign.js"></script>
+</head>
 
 <body>
   <!-- Skip Navigation -->
@@ -2130,9 +2133,8 @@
         </div>
 
         <h1 class="hero__heading">
-          Your Goa.<br>
-          Your Rules.<br>
-          <em>Drive Every Dream.</em>
+          Discover Goa.<br>
+          <em>Drive Your Freedom.</em>
         </h1>
 
         <p class="hero__subtext">
@@ -2154,6 +2156,35 @@
           </a>
         </div>
 
+        <form class="booking-search" data-booking-search action="/contact" method="get">
+          <div class="booking-search__field">
+            <label for="pickup-location">Pickup location</label>
+            <input id="pickup-location" name="pickup-location" type="text" placeholder="Where to pick you up?">
+          </div>
+          <div class="booking-search__field">
+            <label for="dropoff-location">Drop-off location</label>
+            <input id="dropoff-location" name="dropoff-location" type="text" placeholder="Where are you heading?">
+          </div>
+          <div class="booking-search__field">
+            <label for="pickup-date">Pickup date</label>
+            <input id="pickup-date" name="pickup-date" type="date">
+          </div>
+          <div class="booking-search__field">
+            <label for="dropoff-date">Drop-off date</label>
+            <input id="dropoff-date" name="dropoff-date" type="date">
+          </div>
+          <div class="booking-search__field">
+            <label for="vehicle-category">Vehicle category</label>
+            <select id="vehicle-category" name="vehicle-category">
+              <option value="Any vehicle">Any vehicle</option>
+              <option value="Car">Car</option>
+              <option value="Scooter">Scooter</option>
+              <option value="Luxury car">Luxury car</option>
+            </select>
+          </div>
+          <button class="booking-search__submit" type="submit">Search Now</button>
+        </form>
+
         <!-- Hero stats -->
         <div class="hero__stats" aria-label="Key statistics">
           <div>
@@ -2172,6 +2203,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- =================== EXPERIENCES =================== -->
