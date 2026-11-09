@@ -432,3 +432,21 @@ img{max-width:100%;height:auto;display:block;}
 a:focus-visible,button:focus-visible,summary:focus-visible{
   outline:3px solid var(--gold);outline-offset:2px;
 }
+
+
+/* NSZ typography alignment — typography family only; original colors and layout retained. */
+body,
+button,
+input,
+select,
+textarea,
+h1, h2, h3, h4, h5, h6,
+.logo,
+.article-dek,
+.toc-mobile summary,
+.article-body blockquote,
+.faq-question,
+.footer-brand,
+.vehicle-card .vname {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}

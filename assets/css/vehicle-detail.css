@@ -9,7 +9,7 @@
   --muted: #596575;
   --line: #e3e7ec;
   --white: #fff;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: Inter, "Segoe UI", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -31,7 +31,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid var(--gold); outline-
 .hero { background: linear-gradient(125deg, var(--navy), var(--navy-soft)); color: var(--white); }
 .hero-inner { display: grid; grid-template-columns: 1.05fr .95fr; align-items: center; gap: 3rem; padding-block: clamp(3rem, 8vw, 6rem); }
 .eyebrow { color: var(--gold); font-size: .82rem; font-weight: 750; letter-spacing: .1em; text-transform: uppercase; }
-h1, h2 { font-family: "Playfair Display", Georgia, serif; line-height: 1.2; }
+h1, h2 { font-family: Inter, "Segoe UI", sans-serif; line-height: 1.2; }
 h1 { margin: .6rem 0 1rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
 .hero-copy { max-width: 42rem; color: #e0e7ef; }
 .price { margin: 1.5rem 0; font-size: 1.25rem; font-weight: 700; }
@@ -72,3 +72,13 @@ h1 { margin: .6rem 0 1rem; font-size: clamp(2.2rem, 5vw, 3.8rem); }
 }
 @media (max-width: 420px) { .spec-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+
+/* NSZ typography alignment — keep existing sizing, colors and page layout. */
+h3, h4, h5, h6,
+button,
+input,
+select,
+textarea {
+  font-family: Inter, "Segoe UI", sans-serif;
+}
